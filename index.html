@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>by GPAllu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, #f6d365, #fda085);
+        color: #000;
+        text-align: center;
+        padding: 20px;
+        background-image: url("IMG_20231028_101239.jpg"); /* Gambar latar pertama */
+        background-size: cover; /*Agar gambar menutupi seluruh layar */
+        background-position: center; /* Posisi gambar di tengah */
+        background-repeat: no-repeat; /* Tidak mengulang gambar */
+        height: 100vh;
+      }
+      .card {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        background: #fff;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        transition: transform 0.3s, background 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .message {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+      .subtext {
+        font-size: 1em;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <audio id="backsound" src="backs.mp3" loop></audio>
+    <audio id="backsoundAkhir" src="in.mp3"></audio>
+
+    <h1>Untuk Kiky🎉</h1>
+    <p style="text-transform: uppercase">klik kartu for see ucapan :</p>
+    <div class="card" id="kartuUcapan" onclick="ubahUcapan()">
+      <div class="message" id="pesanUtama">Selamat Ulang Tahun! 🎂</div>
+      <div class="subtext" id="pesanKecil">
+        Happy level Up! Resky Widiyanti. S
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
